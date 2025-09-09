@@ -21,7 +21,7 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
                 Logo Twingate
                 """
             ),
-            image="https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80",
+            image="https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80.png",
             link="https://www.twingate.com/",
         ).__str__()
     )

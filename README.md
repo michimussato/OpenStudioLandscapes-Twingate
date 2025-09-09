@@ -218,7 +218,7 @@ To follow up on the previous LinkedIn publications, visit:
 
 # Official Resources
 
-[![ Logo Twingate ](https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80)](https://www.twingate.com/)
+[![ Logo Twingate ](https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80.png)](https://www.twingate.com/)
 
 ## Twingate Connector
 
