@@ -38,17 +38,16 @@ ASSET_HEADER = {
 FEATURE_CONFIGS = {
     OpenStudioLandscapesConfig.DEFAULT: {
         "DOCKER_USE_CACHE": DOCKER_USE_CACHE,
-        # "ENV_VAR_PORT_HOST": "1234",
-        # "ENV_VAR_PORT_CONTAINER": "4321",
-        # f"EXTRA_FILE": pathlib.Path(
-        #     "{DOT_FEATURES}",
-        #     FEATURE,
-        #     ".payload",
-        #     "bin",
-        #     "extra.file",
-        # )
-        # .expanduser()
-        # .as_posix(),
+        "TWINGATE_LABEL_DEPLOYED_BY": "docker",
+        # https://www.twingate.com/docs/deploy-connector-with-docker-compose
+        # Mandatory
+        "TWINGATE_NETWORK": "[Secret - managed via .env (mandatory)]",
+        "TWINGATE_ACCESS_TOKEN": "[Secret - managed via .env (mandatory)]",
+        "TWINGATE_REFRESH_TOKEN": "[Secret - managed via .env (mandatory)]",
+        # Optional
+        "TWINGATE_LOG_ANALYTICS": "v2",
+        # https://help.twingate.com/hc/en-us/articles/4901034540189-Twingate-Connector-Logs
+        "TWINGATE_LOG_LEVEL": "3",
     }
 }
 # @formatter:on

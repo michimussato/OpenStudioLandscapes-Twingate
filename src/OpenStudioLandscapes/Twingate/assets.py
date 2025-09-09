@@ -1,8 +1,6 @@
 import copy
 import json
 import pathlib
-import re
-import shutil
 import textwrap
 import time
 import urllib.parse
@@ -14,6 +12,7 @@ from dagster import (
     AssetIn,
     AssetKey,
     AssetMaterialization,
+    EnvVar,
     MetadataValue,
     Output,
     asset,
@@ -323,7 +322,7 @@ def compose_twingate(
         network_dict = {"networks": list(compose_networks.get("networks", {}).keys())}
         ports_dict = {
             "ports": [
-                f"{env.get('ENV_VAR_PORT_HOST')}:{env.get('ENV_VAR_PORT_CONTAINER')}",
+                # f"{env.get('ENV_VAR_PORT_HOST')}:{env.get('ENV_VAR_PORT_CONTAINER')}",
             ]
         }
     elif "network_mode" in compose_networks:
@@ -372,13 +371,16 @@ def compose_twingate(
                 "domainname": env.get("ROOT_DOMAIN"),
                 # "mac_address": ":".join(re.findall(r"..", env["HOST_ID"])),
                 "restart": "always",
-                "image": "${DOT_OVERRIDES_REGISTRY_NAMESPACE:-docker.io/openstudiolandscapes}/%s:%s"
-                % (build["image_name"], build["image_tags"][0]),
+                "image": "docker.io/twingate/connector:latest",
                 **copy.deepcopy(volumes_dict),
                 **copy.deepcopy(network_dict),
                 **copy.deepcopy(ports_dict),
-                # "environment": {
-                # },
+                "environment": {
+                    "TWINGATE_NETWORK": EnvVar("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK").get_value(),
+                    "TWINGATE_ACCESS_TOKEN": EnvVar("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN").get_value(),
+                    "TWINGATE_REFRESH_TOKEN": EnvVar("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN").get_value(),
+                    "TWINGATE_LABEL_DEPLOYED_BY": env["TWINGATE_LABEL_DEPLOYED_BY"],
+                },
                 # "healthcheck": {
                 # },
                 # "command": command,
