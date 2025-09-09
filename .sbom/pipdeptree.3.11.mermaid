@@ -14,7 +14,7 @@ flowchart TD
     coloredlogs["coloredlogs\n14.0"]
     colorlog["colorlog\n6.9.0"]
     cyclonedx-bom["cyclonedx-bom\n7.1.0"]
-    cyclonedx-python-lib["cyclonedx-python-lib\n11.0.0"]
+    cyclonedx-python-lib["cyclonedx-python-lib\n11.1.0"]
     dagster-pipes["dagster-pipes\n1.9.11"]
     dagster-postgres["dagster-postgres\n0.25.11"]
     dagster["dagster\n1.9.11"]
@@ -48,7 +48,7 @@ flowchart TD
     markupsafe["MarkupSafe\n3.0.2"]
     mdurl["mdurl\n0.1.2"]
     nox["nox\n2025.5.1"]
-    openstudiolandscapes-template["OpenStudioLandscapes-Template\n0.0.0"]
+    openstudiolandscapes-twingate["OpenStudioLandscapes-Twingate\n0.0.0"]
     openstudiolandscapes["OpenStudioLandscapes\n0.0.0"]
     packageurl-python["packageurl-python\n0.17.5"]
     packaging["packaging\n25.0"]
@@ -177,11 +177,11 @@ flowchart TD
     openstudiolandscapes -- "any" --> nox
     openstudiolandscapes -- "any" --> pydot
     openstudiolandscapes -- "any" --> pyyaml
-    openstudiolandscapes-template -- "==1.9.11" --> dagster
-    openstudiolandscapes-template -- "any" --> docker-compose-graph
-    openstudiolandscapes-template -- "any" --> gitpython
-    openstudiolandscapes-template -- "any" --> openstudiolandscapes
-    openstudiolandscapes-template -- "any" --> pyyaml
+    openstudiolandscapes-twingate -- "==1.9.11" --> dagster
+    openstudiolandscapes-twingate -- "any" --> docker-compose-graph
+    openstudiolandscapes-twingate -- "any" --> gitpython
+    openstudiolandscapes-twingate -- "any" --> openstudiolandscapes
+    openstudiolandscapes-twingate -- "any" --> pyyaml
     pip-requirements-parser -- "any" --> packaging
     pip-requirements-parser -- "any" --> pyparsing
     pipdeptree -- ">=24.1" --> packaging

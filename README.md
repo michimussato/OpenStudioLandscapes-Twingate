@@ -263,7 +263,7 @@ For redundancy, Twingate sets up two Connectors. We'll continue with one for now
 
 #### Create and Launch Landscape (OpenStudioLandscapes-Twingate)
 
-```shell
+```generic
 [...]
 twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Offline
 twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication

@@ -376,9 +376,15 @@ def compose_twingate(
                 **copy.deepcopy(network_dict),
                 **copy.deepcopy(ports_dict),
                 "environment": {
-                    "TWINGATE_NETWORK": EnvVar("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK").get_value(),
-                    "TWINGATE_ACCESS_TOKEN": EnvVar("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN").get_value(),
-                    "TWINGATE_REFRESH_TOKEN": EnvVar("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN").get_value(),
+                    "TWINGATE_NETWORK": EnvVar(
+                        "OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK"
+                    ).get_value(),
+                    "TWINGATE_ACCESS_TOKEN": EnvVar(
+                        "OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN"
+                    ).get_value(),
+                    "TWINGATE_REFRESH_TOKEN": EnvVar(
+                        "OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN"
+                    ).get_value(),
                     "TWINGATE_LABEL_DEPLOYED_BY": env["TWINGATE_LABEL_DEPLOYED_BY"],
                 },
                 # "healthcheck": {
