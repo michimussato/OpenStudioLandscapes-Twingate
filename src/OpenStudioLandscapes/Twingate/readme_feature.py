@@ -47,7 +47,7 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
             "[How to deploy a Connector](https://www.twingate.com/docs/quick-start#deploy-a-connector)",
             "[Documentation](https://www.twingate.com/docs/)",
             "[Twingate API](https://www.twingate.com/docs/api-overview)",
-            "[Deploy Docker Compose]9https://www.twingate.com/docs/deploy-connector-with-docker-compose)",
+            "[Deploy Docker Compose](https://www.twingate.com/docs/deploy-connector-with-docker-compose)",
             "[Documentation](https://rustdesk.com/docs/en/self-host/rustdesk-server-oss/docker/)",
             "[Tutorial/Overview (Network Chuck)](https://www.youtube.com/watch?v=IYmXPF3XUwo&ab_channel=NetworkChuck)",
         ]
@@ -133,20 +133,18 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
         level=4,
     )
 
-    doc.add_paragraph(
-        snakemd.Inline(
-            text=textwrap.dedent(
-                """\
-                [...]
-                twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Offline
-                twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
-                twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
-                twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Online
-                [...]
-                """
-            ),
-            code=True,
-        ).__str__()
+    doc.add_code(
+        code=textwrap.dedent(
+            text="""\
+            [...]
+            twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Offline
+            twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
+            twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
+            twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Online
+            [...]\
+            """
+        ),
+        lang="generic",
     )
 
     doc.add_paragraph(

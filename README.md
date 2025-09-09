@@ -14,6 +14,9 @@
    6. [Variables](#variables)
       1. [Feature Configs](#feature-configs)
 2. [Community](#community)
+3. [Official Resources](#official-resources)
+   1. [Twingate Connector](#twingate-connector)
+      1. [Twingate Connector Setup](#twingate-connector-setup)
 
 ***
 
@@ -184,9 +187,15 @@ The following variables are being declared in `OpenStudioLandscapes.Twingate.con
 
 #### Feature Config: default
 
-| Variable           | Type   | Value   |
-| :----------------- | :----- | :------ |
-| `DOCKER_USE_CACHE` | `bool` | `False` |
+| Variable                     | Type   | Value                                     |
+| :--------------------------- | :----- | :---------------------------------------- |
+| `DOCKER_USE_CACHE`           | `bool` | `False`                                   |
+| `TWINGATE_LABEL_DEPLOYED_BY` | `str`  | `docker`                                  |
+| `TWINGATE_NETWORK`           | `str`  | `[Secret - managed via .env (mandatory)]` |
+| `TWINGATE_ACCESS_TOKEN`      | `str`  | `[Secret - managed via .env (mandatory)]` |
+| `TWINGATE_REFRESH_TOKEN`     | `str`  | `[Secret - managed via .env (mandatory)]` |
+| `TWINGATE_LOG_ANALYTICS`     | `str`  | `v2`                                      |
+| `TWINGATE_LOG_LEVEL`         | `str`  | `3`                                       |
 
 # Community
 
@@ -206,3 +215,61 @@ To follow up on the previous LinkedIn publications, visit:
 - [Search for tag #OpenStudioLandscapes on LinkedIn](https://www.linkedin.com/search/results/all/?keywords=%23openstudiolandscapes).
 
 ***
+
+# Official Resources
+
+[![ Logo Twingate ](https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80)](https://www.twingate.com/)
+
+## Twingate Connector
+
+Twingate Information:
+
+- [Github](https://github.com/Twingate-Labs)
+- [Twingate on Docker Hub](https://hub.docker.com/u/twingate)
+- [Twingate Connector (Docker Hub)](https://hub.docker.com/r/twingate/connector)
+- [How to deploy a Connector](https://www.twingate.com/docs/quick-start#deploy-a-connector)
+- [Documentation](https://www.twingate.com/docs/)
+- [Twingate API](https://www.twingate.com/docs/api-overview)
+- [Deploy Docker Compose](https://www.twingate.com/docs/deploy-connector-with-docker-compose)
+- [Documentation](https://rustdesk.com/docs/en/self-host/rustdesk-server-oss/docker/)
+- [Tutorial/Overview (Network Chuck)](https://www.youtube.com/watch?v=IYmXPF3XUwo&ab_channel=NetworkChuck)
+
+### Twingate Connector Setup
+
+#### Sign Up
+
+- [https://auth.twingate.com/signup-v2](https://auth.twingate.com/signup-v2)
+
+#### Add Remote Network
+
+- [https://openstudiolandscapes.twingate.com/networks](https://openstudiolandscapes.twingate.com/networks)
+
+1. On Premise
+2. Set Remote Network name
+3. Add Remote Network name to `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK`)
+
+#### Add Connector
+
+For redundancy, Twingate sets up two Connectors. We'll continue with one for now.
+
+- [https://openstudiolandscapes.twingate.com/connectors](https://openstudiolandscapes.twingate.com/connectors)
+
+1. Docker
+2. Generate New Tokens
+3. Add Access Token to `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN`)
+4. Add Refresh Token to `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN`)
+
+![Not yet connected ](media/images/not_yet_connected.png)
+
+#### Create and Launch Landscape (OpenStudioLandscapes-Twingate)
+
+```shell
+[...]
+twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Offline
+twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
+twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
+twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Online
+[...]            
+```
+
+![Connected ](media/images/connected.png)
