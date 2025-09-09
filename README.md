@@ -2,7 +2,7 @@
 
 ***
 
-1. [Feature: OpenStudioLandscapes-Template](#feature-openstudiolandscapes-template)
+1. [Feature: OpenStudioLandscapes-Twingate](#feature-openstudiolandscapes-twingate)
    1. [Brief](#brief)
    2. [Requirements](#requirements)
    3. [Install](#install)
@@ -27,7 +27,7 @@ This `README.md` was dynamically created with [OpenStudioLandscapesUtil-ReadmeGe
 
 This is an extension to the OpenStudioLandscapes ecosystem. The full documentation of OpenStudioLandscapes is available [here](https://github.com/michimussato/OpenStudioLandscapes).
 
-You feel like writing your own Feature? Go and check out the [OpenStudioLandscapes-Twingate](https://github.com/michimussato/OpenStudioLandscapes-Twingate).
+You feel like writing your own Feature? Go and check out the [OpenStudioLandscapes-Template](https://github.com/michimussato/OpenStudioLandscapes-Template).
 
 ## Requirements
 
@@ -184,12 +184,9 @@ The following variables are being declared in `OpenStudioLandscapes.Twingate.con
 
 #### Feature Config: default
 
-| Variable                 | Type   | Value                                                                  |
-| :----------------------- | :----- | :--------------------------------------------------------------------- |
-| `DOCKER_USE_CACHE`       | `bool` | `False`                                                                |
-| `ENV_VAR_PORT_HOST`      | `str`  | `1234`                                                                 |
-| `ENV_VAR_PORT_CONTAINER` | `str`  | `4321`                                                                 |
-| `EXTRA_FILE`             | `str`  | `{DOT_FEATURES}/OpenStudioLandscapes-Twingate/.payload/bin/extra.file` |
+| Variable           | Type   | Value   |
+| :----------------- | :----- | :------ |
+| `DOCKER_USE_CACHE` | `bool` | `False` |
 
 # Community
 
@@ -201,6 +198,7 @@ The following variables are being declared in `OpenStudioLandscapes.Twingate.con
 | OpenStudioLandscapes-Kitsu          | [https://github.com/michimussato/OpenStudioLandscapes-Kitsu](https://github.com/michimussato/OpenStudioLandscapes-Kitsu)                   | [# openstudiolandscapes-kitsu](https://discord.gg/4UqHdsan)            |
 | OpenStudioLandscapes-RustDeskServer | [https://github.com/michimussato/OpenStudioLandscapes-RustDeskServer](https://github.com/michimussato/OpenStudioLandscapes-RustDeskServer) | [# openstudiolandscapes-rustdeskserver](https://discord.gg/nJ8Ffd2xY3) |
 | OpenStudioLandscapes-Template       | [https://github.com/michimussato/OpenStudioLandscapes-Template](https://github.com/michimussato/OpenStudioLandscapes-Template)             | [# openstudiolandscapes-template](https://discord.gg/J59GYp3Wpy)       |
+| OpenStudioLandscapes-Twingate       | [https://github.com/michimussato/OpenStudioLandscapes-Twingate](https://github.com/michimussato/OpenStudioLandscapes-Twingate)             | [# openstudiolandscapes-twingate](https://discord.gg/tREYa6UNJf)       |
 
 To follow up on the previous LinkedIn publications, visit:
 
