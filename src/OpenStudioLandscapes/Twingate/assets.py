@@ -36,7 +36,7 @@ from OpenStudioLandscapes.engine.enums import *
 from OpenStudioLandscapes.engine.utils import *
 from OpenStudioLandscapes.engine.utils.docker import *
 
-from OpenStudioLandscapes.Template.constants import *
+from OpenStudioLandscapes.Twingate.constants import *
 
 constants = get_constants(
     ASSET_HEADER=ASSET_HEADER,
@@ -266,8 +266,8 @@ def compose_networks(
     if compose_network_mode == ComposeNetworkMode.DEFAULT:
         docker_dict = {
             "networks": {
-                "template": {
-                    "name": "network_template",
+                "twingate": {
+                    "name": "network_twingate",
                 },
             },
         }
@@ -308,7 +308,7 @@ def compose_networks(
         ),
     },
 )
-def compose_template(
+def compose_twingate(
     context: AssetExecutionContext,
     build: dict,  # pylint: disable=redefined-outer-name
     env: dict,  # pylint: disable=redefined-outer-name
@@ -360,7 +360,7 @@ def compose_template(
 
     command = []
 
-    service_name = "template"
+    service_name = "twingate"
     container_name = "--".join([service_name, env.get("LANDSCAPE", "default")])
     host_name = ".".join([service_name, env["ROOT_DOMAIN"]])
 
@@ -403,8 +403,8 @@ def compose_template(
 @asset(
     **ASSET_HEADER,
     ins={
-        "compose_template": AssetIn(
-            AssetKey([*ASSET_HEADER["key_prefix"], "compose_template"]),
+        "compose_twingate": AssetIn(
+            AssetKey([*ASSET_HEADER["key_prefix"], "compose_twingate"]),
         ),
     },
 )

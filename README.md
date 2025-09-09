@@ -21,13 +21,13 @@ This `README.md` was dynamically created with [OpenStudioLandscapesUtil-ReadmeGe
 
 ***
 
-# Feature: OpenStudioLandscapes-Template
+# Feature: OpenStudioLandscapes-Twingate
 
 ## Brief
 
 This is an extension to the OpenStudioLandscapes ecosystem. The full documentation of OpenStudioLandscapes is available [here](https://github.com/michimussato/OpenStudioLandscapes).
 
-You feel like writing your own Feature? Go and check out the [OpenStudioLandscapes-Template](https://github.com/michimussato/OpenStudioLandscapes-Template).
+You feel like writing your own Feature? Go and check out the [OpenStudioLandscapes-Twingate](https://github.com/michimussato/OpenStudioLandscapes-Twingate).
 
 ## Requirements
 
@@ -43,7 +43,7 @@ Clone this repository into `OpenStudioLandscapes/.features`:
 ```shell
 
 # cd .features
-git clone https://github.com/michimussato/OpenStudioLandscapes-Template.git
+git clone https://github.com/michimussato/OpenStudioLandscapes-Twingate.git
 
 ```
 
@@ -51,7 +51,7 @@ Create `venv`:
 
 ```shell
 
-# cd .features/OpenStudioLandscapes-Template
+# cd .features/OpenStudioLandscapes-Twingate
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip setuptools
@@ -62,7 +62,7 @@ Configure `venv`:
 
 ```shell
 
-# cd .features/OpenStudioLandscapes-Template
+# cd .features/OpenStudioLandscapes-Twingate
 pip install -e "../../[dev]"
 pip install -e ".[dev]"
 
@@ -77,15 +77,15 @@ Add the following code to `OpenStudioLandscapes.engine.features.FEATURES`:
 ```python
 
 FEATURES.update(
-    "OpenStudioLandscapes-Template": {
+    "OpenStudioLandscapes-Twingate": {
         "enabled": True|False,
         # - from ENVIRONMENT VARIABLE (.env):
         #   "enabled": get_bool_env("ENV_VAR")
         # - combined:
         #   "enabled": True|False or get_bool_env(
-        #       "OPENSTUDIOLANDSCAPES__ENABLE_FEATURE_OPENSTUDIOLANDSCAPES_TEMPLATE"
+        #       "OPENSTUDIOLANDSCAPES__ENABLE_FEATURE_OPENSTUDIOLANDSCAPES_TWINGATE"
         #   )
-        "module": "OpenStudioLandscapes.Template.definitions",
+        "module": "OpenStudioLandscapes.Twingate.definitions",
         "compose_scope": ComposeScope.DEFAULT,
         "feature_config": OpenStudioLandscapesConfig.DEFAULT,
     }
@@ -160,7 +160,7 @@ We create the following SBOMs:
 - [`pipdeptree`](https://pypi.org/project/pipdeptree/) (Dot)
 - [`pipdeptree`](https://pypi.org/project/pipdeptree/) (Mermaid)
 
-SBOMs for the different Python interpreters defined in [`.noxfile.VERSIONS`](https://github.com/michimussato/OpenStudioLandscapes-Template/tree/main/noxfile.py) will be created in the [`.sbom`](https://github.com/michimussato/OpenStudioLandscapes-Template/tree/main/.sbom) directory of this repository.
+SBOMs for the different Python interpreters defined in [`.noxfile.VERSIONS`](https://github.com/michimussato/OpenStudioLandscapes-Twingate/tree/main/noxfile.py) will be created in the [`.sbom`](https://github.com/michimussato/OpenStudioLandscapes-Twingate/tree/main/.sbom) directory of this repository.
 
 - `cyclone-dx`
 - `pipdeptree` (Dot)
@@ -172,7 +172,7 @@ Currently, the following Python interpreters are enabled for testing:
 
 ## Variables
 
-The following variables are being declared in `OpenStudioLandscapes.Template.constants` and are accessible throughout the [`OpenStudioLandscapes-Template`](https://github.com/michimussato/OpenStudioLandscapes-Template/tree/main/src/OpenStudioLandscapes/Template/constants.py) package.
+The following variables are being declared in `OpenStudioLandscapes.Twingate.constants` and are accessible throughout the [`OpenStudioLandscapes-Twingate`](https://github.com/michimussato/OpenStudioLandscapes-Twingate/tree/main/src/OpenStudioLandscapes/Twingate/constants.py) package.
 
 | Variable           | Type   |
 | :----------------- | :----- |
@@ -189,7 +189,7 @@ The following variables are being declared in `OpenStudioLandscapes.Template.con
 | `DOCKER_USE_CACHE`       | `bool` | `False`                                                                |
 | `ENV_VAR_PORT_HOST`      | `str`  | `1234`                                                                 |
 | `ENV_VAR_PORT_CONTAINER` | `str`  | `4321`                                                                 |
-| `EXTRA_FILE`             | `str`  | `{DOT_FEATURES}/OpenStudioLandscapes-Template/.payload/bin/extra.file` |
+| `EXTRA_FILE`             | `str`  | `{DOT_FEATURES}/OpenStudioLandscapes-Twingate/.payload/bin/extra.file` |
 
 # Community
 
