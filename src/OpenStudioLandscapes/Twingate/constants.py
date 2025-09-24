@@ -38,6 +38,9 @@ ASSET_HEADER = {
 FEATURE_CONFIGS = {
     OpenStudioLandscapesConfig.DEFAULT: {
         "DOCKER_USE_CACHE": DOCKER_USE_CACHE,
+        "HOSTNAME": "twingate",
+        "TELEPORT_ENTRY_POINT_HOST": "{{HOSTNAME}}",  # Either a hardcoded str or a ref to a Variable (with double {{ }}!)
+        "TELEPORT_ENTRY_POINT_PORT": "{{DAGSTER_DEV_PORT_HOST}}",  # Either a hardcoded str or a ref to a Variable (with double {{ }}!)
         "TWINGATE_LABEL_DEPLOYED_BY": "docker",
         # https://www.twingate.com/docs/deploy-connector-with-docker-compose
         # Mandatory
