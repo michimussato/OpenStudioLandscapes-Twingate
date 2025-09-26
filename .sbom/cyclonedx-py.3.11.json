@@ -192,7 +192,7 @@
       "version": "0.0.0"
     },
     {
-      "bom-ref": "PyYAML==6.0.2",
+      "bom-ref": "PyYAML==6.0.3",
       "description": "YAML parser and emitter for Python",
       "externalReferences": [
         {
@@ -240,9 +240,9 @@
         }
       ],
       "name": "PyYAML",
-      "purl": "pkg:pypi/pyyaml@6.0.2",
+      "purl": "pkg:pypi/pyyaml@6.0.3",
       "type": "library",
-      "version": "6.0.2"
+      "version": "6.0.3"
     },
     {
       "bom-ref": "Pygments==2.19.2",
@@ -1425,7 +1425,7 @@
       "version": "3.2.4"
     },
     {
-      "bom-ref": "grpcio==1.75.0",
+      "bom-ref": "grpcio==1.75.1",
       "description": "HTTP/2-based RPC framework",
       "externalReferences": [
         {
@@ -1458,9 +1458,9 @@
         }
       ],
       "name": "grpcio",
-      "purl": "pkg:pypi/grpcio@1.75.0",
+      "purl": "pkg:pypi/grpcio@1.75.1",
       "type": "library",
-      "version": "1.75.0"
+      "version": "1.75.1"
     },
     {
       "bom-ref": "grpcio-health-checking==1.71.2",
@@ -3336,7 +3336,7 @@
       "dependsOn": [
         "GitPython==3.1.45",
         "OpenStudioLandscapes==0.0.0",
-        "PyYAML==6.0.2",
+        "PyYAML==6.0.3",
         "cyclonedx-bom==7.1.0",
         "dagster==1.9.11",
         "docker-compose-graph==1.0.0",
@@ -3350,7 +3350,7 @@
     {
       "dependsOn": [
         "GitPython==3.1.45",
-        "PyYAML==6.0.2",
+        "PyYAML==6.0.3",
         "cyclonedx-bom==7.1.0",
         "dagster-postgres==0.25.11",
         "dagster==1.9.11",
@@ -3364,7 +3364,7 @@
       "ref": "OpenStudioLandscapes==0.0.0"
     },
     {
-      "ref": "PyYAML==6.0.2"
+      "ref": "PyYAML==6.0.3"
     },
     {
       "ref": "Pygments==2.19.2"
@@ -3470,7 +3470,7 @@
     {
       "dependsOn": [
         "Jinja2==3.1.6",
-        "PyYAML==6.0.2",
+        "PyYAML==6.0.3",
         "SQLAlchemy==2.0.43",
         "alembic==1.16.5",
         "antlr4-python3-runtime==4.13.2",
@@ -3482,7 +3482,7 @@
         "filelock==3.19.1",
         "fsspec==2025.9.0",
         "grpcio-health-checking==1.71.2",
-        "grpcio==1.75.0",
+        "grpcio==1.75.1",
         "packaging==25.0",
         "protobuf==5.29.5",
         "pydantic==2.11.9",
@@ -3520,7 +3520,7 @@
     {
       "dependsOn": [
         "Jinja2==3.1.6",
-        "PyYAML==6.0.2",
+        "PyYAML==6.0.3",
         "graphviz==0.21",
         "pydot==4.0.1",
         "python-dotenv==1.1.1",
@@ -3570,7 +3570,7 @@
     },
     {
       "dependsOn": [
-        "grpcio==1.75.0",
+        "grpcio==1.75.1",
         "protobuf==5.29.5"
       ],
       "ref": "grpcio-health-checking==1.71.2"
@@ -3579,7 +3579,7 @@
       "dependsOn": [
         "typing_extensions==4.15.0"
       ],
-      "ref": "grpcio==1.75.0"
+      "ref": "grpcio==1.75.1"
     },
     {
       "ref": "humanfriendly==10.0"
@@ -3634,7 +3634,7 @@
     },
     {
       "dependsOn": [
-        "PyYAML==6.0.2",
+        "PyYAML==6.0.3",
         "mdurl==0.1.2",
         "requests==2.32.5"
       ],
@@ -3868,7 +3868,7 @@
     },
     {
       "dependsOn": [
-        "PyYAML==6.0.2"
+        "PyYAML==6.0.3"
       ],
       "ref": "watchdog==5.0.3"
     },
@@ -3877,7 +3877,7 @@
     }
   ],
   "metadata": {
-    "timestamp": "2025-09-24T12:00:36.533551+00:00",
+    "timestamp": "2025-09-26T11:05:59.213997+00:00",
     "tools": {
       "components": [
         {
@@ -3981,7 +3981,7 @@
       ]
     }
   },
-  "serialNumber": "urn:uuid:9b30e8b7-12f2-461a-8e34-3c7bf142c06c",
+  "serialNumber": "urn:uuid:a8e9a1f5-7f6b-489e-90aa-556ab6e592fe",
   "version": 1,
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
