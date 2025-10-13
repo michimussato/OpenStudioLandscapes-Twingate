@@ -126,7 +126,7 @@ def build_docker_image(
 
     docker_file = pathlib.Path(
         env["DOT_LANDSCAPES"],
-        env.get("LANDSCAPE"),
+        env.get("LANDSCAPE", "default"),
         f"{ASSET_HEADER['group_name']}__{'__'.join(ASSET_HEADER['key_prefix'])}",
         "__".join(context.asset_key.path),
         "Dockerfiles",
@@ -326,7 +326,7 @@ def compose_twingate(
             ]
         }
     elif "network_mode" in compose_networks:
-        network_dict = {"network_mode": compose_networks.get("network_mode")}
+        network_dict = {"network_mode": compose_networks["network_mode"]}
 
     volumes_dict = {
         "volumes": [],
@@ -370,7 +370,7 @@ def compose_twingate(
             service_name: {
                 "container_name": container_name,
                 "hostname": host_name,
-                "domainname": env.get("OPENSTUDIOLANDSCAPES__DOMAIN_LAN"),
+                "domainname": env["OPENSTUDIOLANDSCAPES__DOMAIN_LAN"],
                 # "mac_address": ":".join(re.findall(r"..", env["HOST_ID"])),
                 "restart": "always",
                 "image": "docker.io/twingate/connector:latest",

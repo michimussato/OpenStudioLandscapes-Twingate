@@ -39,8 +39,9 @@ FEATURE_CONFIGS = {
     OpenStudioLandscapesConfig.DEFAULT: {
         "DOCKER_USE_CACHE": DOCKER_USE_CACHE,
         "HOSTNAME": "twingate",
+        "TWINGATE_PORT_HOST": "80",  # Todo: this is a placeholder because we don't have a port mapping here yet.
         "TELEPORT_ENTRY_POINT_HOST": "{{HOSTNAME}}",  # Either a hardcoded str or a ref to a Variable (with double {{ }}!)
-        "TELEPORT_ENTRY_POINT_PORT": "{{DAGSTER_DEV_PORT_HOST}}",  # Either a hardcoded str or a ref to a Variable (with double {{ }}!)
+        "TELEPORT_ENTRY_POINT_PORT": "{{TWINGATE_PORT_HOST}}",  # Either a hardcoded str or a ref to a Variable (with double {{ }}!)
         "TWINGATE_LABEL_DEPLOYED_BY": "docker",
         # https://www.twingate.com/docs/deploy-connector-with-docker-compose
         # Mandatory
