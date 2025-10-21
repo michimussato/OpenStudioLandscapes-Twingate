@@ -17,8 +17,8 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
     doc.add_paragraph(
         snakemd.Inline(
             text=textwrap.dedent(
-                """
-                Logo Twingate
+                """\
+                Logo Twingate\
                 """
             ),
             image="https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80.png",
@@ -34,7 +34,7 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
     doc.add_paragraph(
         text=textwrap.dedent(
             """\
-            Twingate Information:
+            Twingate Information:\
             """
         )
     )
@@ -97,7 +97,7 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
         text=textwrap.dedent(
             """\
             For redundancy, Twingate sets up two Connectors. We'll
-            continue with one for now.
+            continue with one for now.\
             """
         )
     )
@@ -121,7 +121,7 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
         snakemd.Inline(
             text=textwrap.dedent(
                 """\
-                Not yet connected
+                Not yet connected\
                 """
             ),
             image="media/images/not_yet_connected.png",
@@ -142,7 +142,7 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
             twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
             twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Online
             [...]\
-            """
+"""
         ),
         lang="generic",
     )
@@ -151,7 +151,7 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
         snakemd.Inline(
             text=textwrap.dedent(
                 """\
-                Connected
+                Connected\
                 """
             ),
             image="media/images/connected.png",

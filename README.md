@@ -171,8 +171,9 @@ The following variables are being declared in `OpenStudioLandscapes.Twingate.con
 | :--------------------------- | :----- | :---------------------------------------- |
 | `DOCKER_USE_CACHE`           | `bool` | `False`                                   |
 | `HOSTNAME`                   | `str`  | `twingate`                                |
+| `TWINGATE_PORT_HOST`         | `str`  | `80`                                      |
 | `TELEPORT_ENTRY_POINT_HOST`  | `str`  | `{{HOSTNAME}}`                            |
-| `TELEPORT_ENTRY_POINT_PORT`  | `str`  | `{{DAGSTER_DEV_PORT_HOST}}`               |
+| `TELEPORT_ENTRY_POINT_PORT`  | `str`  | `{{TWINGATE_PORT_HOST}}`                  |
 | `TWINGATE_LABEL_DEPLOYED_BY` | `str`  | `docker`                                  |
 | `TWINGATE_NETWORK`           | `str`  | `[Secret - managed via .env (mandatory)]` |
 | `TWINGATE_ACCESS_TOKEN`      | `str`  | `[Secret - managed via .env (mandatory)]` |
@@ -201,7 +202,7 @@ To follow up on the previous LinkedIn publications, visit:
 
 # Official Resources
 
-[![ Logo Twingate ](https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80.png)](https://www.twingate.com/)
+[![Logo Twingate ](https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80.png)](https://www.twingate.com/)
 
 ## Twingate Connector
 
@@ -252,7 +253,7 @@ twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Offline
 twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
 twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
 twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Online
-[...]            
+[...]
 ```
 
 ![Connected ](media/images/connected.png)
