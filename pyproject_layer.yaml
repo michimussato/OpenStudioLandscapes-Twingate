@@ -1,0 +1,24 @@
+project:
+  description: Twingate Feature for OpenStudioLandscapes
+  name: OpenStudioLandscapes-Twingate
+  optional-dependencies:
+    dev:
+    - OpenStudioLandscapes-Twingate[testing]
+    - OpenStudioLandscapes-Twingate[lint]
+    - OpenStudioLandscapes-Twingate[nox]
+    - OpenStudioLandscapes-Twingate[sbom]
+    - OpenStudioLandscapes-Twingate[coverage]
+    - OpenStudioLandscapes-Twingate[readme]
+    nox:
+    - OpenStudioLandscapes-Twingate[testing]
+    sbom:
+    - OpenStudioLandscapes-Twingate[graphviz]
+  urls:
+    Homepage: https://github.com/michimussato/OpenStudioLandscapes-Twingate
+tool:
+  dagster:
+    code_location_name: OpenStudioLandscapes-Twingate
+    module_name: OpenStudioLandscapes.Twingate.definitions
+  setuptools:
+    packages:
+    - OpenStudioLandscapes.Twingate
