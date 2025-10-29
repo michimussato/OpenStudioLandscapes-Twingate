@@ -56,5 +56,5 @@ src/OpenStudioLandscapes/Twingate/__init__.py:1:0: C0103: Module name "Twingate"
 src/OpenStudioLandscapes/Twingate/__init__.py:11:4: C0103: Constant name "dist_name" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.06/10 (previous run: 6.94/10, +0.11)
+Your code has been rated at 7.06/10 (previous run: 5.81/10, +1.24)
 
