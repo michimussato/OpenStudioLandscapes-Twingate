@@ -32,6 +32,7 @@ from OpenStudioLandscapes.engine.common_assets.group_out import get_group_out
 from OpenStudioLandscapes.engine.constants import *
 from OpenStudioLandscapes.engine.enums import *
 from OpenStudioLandscapes.engine.utils import *
+from OpenStudioLandscapes.engine.policies.retry import build_docker_image_retry_policy
 
 from OpenStudioLandscapes.Twingate.constants import *
 
@@ -103,6 +104,7 @@ docker_config_json = get_docker_config_json(
             AssetKey([*ASSET_HEADER_BASE["key_prefix"], str(GroupIn.BASE_IN)])
         ),
     },
+    retry_policy=build_docker_image_retry_policy,
 )
 def build_docker_image(
     context: AssetExecutionContext,
@@ -325,10 +327,16 @@ def compose_twingate(
     command = []
 
     service_name = "twingate"
-    container_name = "--".join([service_name, env.get("LANDSCAPE", "default")])
-    host_name = ".".join(
-        [env["HOSTNAME"] or service_name, env["OPENSTUDIOLANDSCAPES__DOMAIN_LAN"]]
+    container_name, host_name = get_docker_compose_names(
+        context=context,
+        service_name=service_name,
+        landscape_id=env.get("LANDSCAPE", "default"),
+        domain_lan=env.get("OPENSTUDIOLANDSCAPES__DOMAIN_LAN"),
     )
+    # container_name = "--".join([service_name, env.get("LANDSCAPE", "default")])
+    # host_name = ".".join(
+    #     [service_name, env["OPENSTUDIOLANDSCAPES__DOMAIN_LAN"]]
+    # )
 
     docker_dict = {
         "services": {
