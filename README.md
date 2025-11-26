@@ -170,10 +170,6 @@ The following variables are being declared in `OpenStudioLandscapes.Twingate.con
 | Variable                     | Type   | Value                                     |
 | :--------------------------- | :----- | :---------------------------------------- |
 | `DOCKER_USE_CACHE`           | `bool` | `False`                                   |
-| `HOSTNAME`                   | `str`  | `twingate`                                |
-| `TWINGATE_PORT_HOST`         | `str`  | `80`                                      |
-| `TELEPORT_ENTRY_POINT_HOST`  | `str`  | `{{HOSTNAME}}`                            |
-| `TELEPORT_ENTRY_POINT_PORT`  | `str`  | `{{TWINGATE_PORT_HOST}}`                  |
 | `TWINGATE_LABEL_DEPLOYED_BY` | `str`  | `docker`                                  |
 | `TWINGATE_NETWORK`           | `str`  | `[Secret - managed via .env (mandatory)]` |
 | `TWINGATE_ACCESS_TOKEN`      | `str`  | `[Secret - managed via .env (mandatory)]` |
