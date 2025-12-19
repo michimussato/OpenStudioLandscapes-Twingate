@@ -5,7 +5,6 @@
 1. [Feature: OpenStudioLandscapes-Twingate](#feature-openstudiolandscapes-twingate)
    1. [Brief](#brief)
    2. [Configuration](#configuration)
-   3. [Official Resources](#official-resources)
 2. [Official Resources](#official-resources)
    1. [Twingate Connector](#twingate-connector)
       1. [Twingate Connector Setup](#twingate-connector-setup)
@@ -84,8 +83,6 @@ key_prefixes:
 ```
 
 ***
-
-## Official Resources
 
 # Official Resources
 
@@ -266,4 +263,4 @@ Currently, the following Python interpreters are enabled for testing:
 
 ***
 
-Last changed: **2025-12-19 15:51:43 UTC**.
+Last changed: **2025-12-19 16:41:35 UTC**
