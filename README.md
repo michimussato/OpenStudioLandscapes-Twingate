@@ -5,7 +5,7 @@
 1. [Feature: OpenStudioLandscapes-Twingate](#feature-openstudiolandscapes-twingate)
    1. [Brief](#brief)
    2. [Configuration](#configuration)
-2. [Official Resources](#official-resources)
+2. [External Resources](#external-resources)
    1. [Twingate Connector](#twingate-connector)
       1. [Twingate Connector Setup](#twingate-connector-setup)
 3. [Community](#community)
@@ -84,7 +84,7 @@ key_prefixes:
 
 ***
 
-# Official Resources
+# External Resources
 
 [![Logo Twingate ](https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80.png)](https://www.twingate.com/)
 
@@ -263,4 +263,4 @@ Currently, the following Python interpreters are enabled for testing:
 
 ***
 
-Last changed: **2025-12-19 16:47:57 UTC**
+Last changed: **2025-12-19 21:11:38 UTC**
