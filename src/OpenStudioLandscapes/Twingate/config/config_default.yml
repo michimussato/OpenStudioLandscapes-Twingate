@@ -1,0 +1,20 @@
+# Base Information
+group_name: "OpenStudioLandscapes_Twingate"
+key_prefixes:
+  - "OpenStudioLandscapes_Twingate"
+
+#compose_scope: "default"
+
+# Not enabled by default because this Feature
+# is mostly obsolete (replaced by Pangolin)
+#enabled: false
+
+#docker_image: "docker.io/twingate/connector:latest"
+
+#TWINGATE_LABEL_DEPLOYED_BY: "docker"
+#TWINGATE_NETWORK: null  # Set via `OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK` in `.env`
+#TWINGATE_ACCESS_TOKEN: null  # Set via `OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN` in `.env`
+#TWINGATE_REFRESH_TOKEN: null  # Set via `OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN` in `.env`
+
+#TWINGATE_LOG_ANALYTICS: "v2"
+#TWINGATE_LOG_LEVEL: 3
