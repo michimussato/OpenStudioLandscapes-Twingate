@@ -1,29 +1,41 @@
 ************* Module OpenStudioLandscapes.Twingate.assets
-src/OpenStudioLandscapes/Twingate/assets.py:185:0: C0301: Line too long (121/100) (line-too-long)
-src/OpenStudioLandscapes/Twingate/assets.py:184:9: W0511: Todo: this won't work as expected if len(tags) > 1 (fixme)
-src/OpenStudioLandscapes/Twingate/assets.py:380:13: W0511: Todo: "cmd_docker_run": MetadataValue.path(cmd_list_to_str(cmd_docker_run)), (fixme)
+src/OpenStudioLandscapes/Twingate/assets.py:195:0: C0301: Line too long (121/100) (line-too-long)
+src/OpenStudioLandscapes/Twingate/assets.py:194:9: W0511: Todo: this won't work as expected if len(tags) > 1 (fixme)
 src/OpenStudioLandscapes/Twingate/assets.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-src/OpenStudioLandscapes/Twingate/assets.py:32:0: W0401: Wildcard import OpenStudioLandscapes.engine.constants (wildcard-import)
-src/OpenStudioLandscapes/Twingate/assets.py:33:0: W0401: Wildcard import OpenStudioLandscapes.engine.enums (wildcard-import)
-src/OpenStudioLandscapes/Twingate/assets.py:35:0: W0401: Wildcard import OpenStudioLandscapes.engine.utils (wildcard-import)
-src/OpenStudioLandscapes/Twingate/assets.py:36:0: W0401: Wildcard import OpenStudioLandscapes.engine.utils.docker.compose_dicts (wildcard-import)
-src/OpenStudioLandscapes/Twingate/assets.py:38:0: W0401: Wildcard import OpenStudioLandscapes.Twingate.constants (wildcard-import)
-src/OpenStudioLandscapes/Twingate/assets.py:110:0: C0112: Empty function docstring (empty-docstring)
-src/OpenStudioLandscapes/Twingate/assets.py:110:0: R0914: Too many local variables (19/15) (too-many-locals)
-src/OpenStudioLandscapes/Twingate/assets.py:190:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-src/OpenStudioLandscapes/Twingate/assets.py:193:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-src/OpenStudioLandscapes/Twingate/assets.py:230:0: C0116: Missing function or method docstring (missing-function-docstring)
-src/OpenStudioLandscapes/Twingate/assets.py:276:0: C0112: Empty function docstring (empty-docstring)
-src/OpenStudioLandscapes/Twingate/assets.py:276:0: R0914: Too many local variables (18/15) (too-many-locals)
-src/OpenStudioLandscapes/Twingate/assets.py:278:4: W0613: Unused argument 'build' (unused-argument)
-src/OpenStudioLandscapes/Twingate/assets.py:326:4: W0612: Unused variable 'command' (unused-variable)
-src/OpenStudioLandscapes/Twingate/assets.py:393:0: C0116: Missing function or method docstring (missing-function-docstring)
-src/OpenStudioLandscapes/Twingate/assets.py:416:0: C0116: Missing function or method docstring (missing-function-docstring)
-src/OpenStudioLandscapes/Twingate/assets.py:436:0: C0116: Missing function or method docstring (missing-function-docstring)
-src/OpenStudioLandscapes/Twingate/assets.py:32:0: W0614: Unused import(s) docker_config, os, LOGGER, DOCKER_PROGRESS, docker_config_, msg, e, DOCKER_CONFIG, DOCKER_USE_CACHE_GLOBAL, DOCKER_USE_CACHE_BASE, PREFIX_COMPOSE_SCOPE, GROUP_COMPOSE, KEY_COMPOSE, ASSET_HEADER_COMPOSE, ENVIRONMENT_COMPOSE, GROUP_COMPOSE_LICENSE_SERVER, KEY_COMPOSE_LICENSE_SERVER, ASSET_HEADER_COMPOSE_LICENSE_SERVER, ENVIRONMENT_COMPOSE_LICENSE_SERVER, GROUP_COMPOSE_WORKER, KEY_COMPOSE_WORKER, ASSET_HEADER_COMPOSE_WORKER, ENVIRONMENT_COMPOSE_WORKER, GROUP_BASE_ENV, KEY_BASE_ENV, ASSET_HEADER_BASE_ENV, GROUP_BASE, KEY_BASE, GROUP_LANDSCAPE_MAP, KEY_LANDSCAPE_MAP, ASSET_HEADER_LANDSCAPE_MAP, GROUP_TELEPORT, KEY_TELEPORT, ASSET_HEADER_TELEPORT, GROUP_TRAEFIK, KEY_TRAEFIK, ASSET_HEADER_TRAEFIK, GROUP_DISTRIBUTABLE, KEY_DISTRIBUTABLE, ASSET_HEADER_DISTRIBUTABLE, constants_base, features, MutableMapping, get_dagster_logger, enum, OpenStudioLandscapesConfig, FeatureVolumeType, ComposeScope, ComposeCmdExclusion, DockerComposeNetworkMode, DockerComposeRestartPolicy, DockerComposeDependsOnPolicy, DockerRegistry, DockerRepositoryType, FEATURES, constants_compose, constants_compose_license_server and constants_compose_worker from wildcard import of OpenStudioLandscapes.engine.constants (unused-wildcard-import)
-src/OpenStudioLandscapes/Twingate/assets.py:35:0: W0614: Unused import(s) operator_, shlex, time, git, cmd_list_to_str, get_pip_install_str, get_apt_install_str, get_copy_str, get_wget_str, get_git_root, get_configs_root, get_data_root, get_bin_root, get_image_name, parse_docker_image_path, get_compose_scope, get_feature_config, expand_dict_vars, metadatavalues_from_dict, get_bool_env, get_str_env, get_dynamic_ins, get_networks_dict, Dict, List, Tuple, Union, OpExecutionContext, ComposeScopeException, OpenStudioLandscapesException, queue, shutil, subprocess, threading, OpenStudioLandscapesDockerException, docker_build_cmd, docker_push_cmd, OutputReader, execute_in_threads, docker_process_cmds and docker_do from wildcard import of OpenStudioLandscapes.engine.utils (unused-wildcard-import)
-src/OpenStudioLandscapes/Twingate/assets.py:36:0: W0614: Unused import(s) DockerComposeServiceDefinition, DockerComposeNetworkDefinition, get_pangolin_newt_service_skeleton, LiteralString, Required and TypedDict from wildcard import of OpenStudioLandscapes.engine.utils.docker.compose_dicts (unused-wildcard-import)
-src/OpenStudioLandscapes/Twingate/assets.py:38:0: W0614: Unused import(s) DOCKER_USE_CACHE, GROUP, KEY, FEATURE, FEATURE_CONFIGS, constants_multi_asset, AssetOut and multi_asset from wildcard import of OpenStudioLandscapes.Twingate.constants (unused-wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:20:0: E0401: Unable to import 'OpenStudioLandscapes.engine.common_assets.compose_scope' (import-error)
+src/OpenStudioLandscapes/Twingate/assets.py:20:0: E0611: No name 'compose_scope' in module 'OpenStudioLandscapes.engine.common_assets' (no-name-in-module)
+src/OpenStudioLandscapes/Twingate/assets.py:26:0: E0401: Unable to import 'OpenStudioLandscapes.engine.common_assets.feature' (import-error)
+src/OpenStudioLandscapes/Twingate/assets.py:26:0: E0611: No name 'feature' in module 'OpenStudioLandscapes.engine.common_assets' (no-name-in-module)
+src/OpenStudioLandscapes/Twingate/assets.py:27:0: E0611: No name 'get_feature_out_v2' in module 'OpenStudioLandscapes.engine.common_assets.feature_out' (no-name-in-module)
+src/OpenStudioLandscapes/Twingate/assets.py:28:0: E0611: No name 'get_feature_in' in module 'OpenStudioLandscapes.engine.common_assets.group_in' (no-name-in-module)
+src/OpenStudioLandscapes/Twingate/assets.py:28:0: E0611: No name 'get_feature_in_parent' in module 'OpenStudioLandscapes.engine.common_assets.group_in' (no-name-in-module)
+src/OpenStudioLandscapes/Twingate/assets.py:33:0: E0401: Unable to import 'OpenStudioLandscapes.engine.config.models' (import-error)
+src/OpenStudioLandscapes/Twingate/assets.py:33:0: E0611: No name 'config' in module 'OpenStudioLandscapes.engine' (no-name-in-module)
+src/OpenStudioLandscapes/Twingate/assets.py:34:0: W0401: Wildcard import OpenStudioLandscapes.engine.constants (wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:35:0: W0401: Wildcard import OpenStudioLandscapes.engine.enums (wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:36:0: E0401: Unable to import 'OpenStudioLandscapes.engine.link.models' (import-error)
+src/OpenStudioLandscapes/Twingate/assets.py:36:0: E0611: No name 'link' in module 'OpenStudioLandscapes.engine' (no-name-in-module)
+src/OpenStudioLandscapes/Twingate/assets.py:38:0: W0401: Wildcard import OpenStudioLandscapes.engine.utils (wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:39:0: W0401: Wildcard import OpenStudioLandscapes.engine.utils.docker.compose_dicts (wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:43:0: W0401: Wildcard import OpenStudioLandscapes.Twingate.constants (wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:96:18: E0602: Undefined variable 'ConfigParent' (undefined-variable)
+src/OpenStudioLandscapes/Twingate/assets.py:112:0: C0112: Empty function docstring (empty-docstring)
+src/OpenStudioLandscapes/Twingate/assets.py:115:4: C0103: Argument name "CONFIG" doesn't conform to snake_case naming style (invalid-name)
+src/OpenStudioLandscapes/Twingate/assets.py:112:0: R0914: Too many local variables (21/15) (too-many-locals)
+src/OpenStudioLandscapes/Twingate/assets.py:127:4: W0621: Redefining name 'docker_config' from outer scope (line 34) (redefined-outer-name)
+src/OpenStudioLandscapes/Twingate/assets.py:200:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+src/OpenStudioLandscapes/Twingate/assets.py:203:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+src/OpenStudioLandscapes/Twingate/assets.py:239:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/OpenStudioLandscapes/Twingate/assets.py:241:4: C0103: Argument name "CONFIG" doesn't conform to snake_case naming style (invalid-name)
+src/OpenStudioLandscapes/Twingate/assets.py:281:0: C0112: Empty function docstring (empty-docstring)
+src/OpenStudioLandscapes/Twingate/assets.py:283:4: C0103: Argument name "CONFIG" doesn't conform to snake_case naming style (invalid-name)
+src/OpenStudioLandscapes/Twingate/assets.py:281:0: R0914: Too many local variables (19/15) (too-many-locals)
+src/OpenStudioLandscapes/Twingate/assets.py:334:4: W0612: Unused variable 'command' (unused-variable)
+src/OpenStudioLandscapes/Twingate/assets.py:394:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/OpenStudioLandscapes/Twingate/assets.py:34:0: W0614: Unused import(s) os, LOGGER, DOCKER_PROGRESS, docker_config_, msg, e, DOCKER_CONFIG, DOCKER_USE_CACHE_GLOBAL, DOCKER_USE_CACHE_BASE, PREFIX_COMPOSE_SCOPE, GROUP_COMPOSE, KEY_COMPOSE, ASSET_HEADER_COMPOSE, ENVIRONMENT_COMPOSE, GROUP_COMPOSE_LICENSE_SERVER, KEY_COMPOSE_LICENSE_SERVER, ASSET_HEADER_COMPOSE_LICENSE_SERVER, ENVIRONMENT_COMPOSE_LICENSE_SERVER, GROUP_COMPOSE_WORKER, KEY_COMPOSE_WORKER, ASSET_HEADER_COMPOSE_WORKER, ENVIRONMENT_COMPOSE_WORKER, GROUP_BASE_ENV, KEY_BASE_ENV, ASSET_HEADER_BASE_ENV, GROUP_BASE, KEY_BASE, GROUP_LANDSCAPE_MAP, KEY_LANDSCAPE_MAP, ASSET_HEADER_LANDSCAPE_MAP, GROUP_TELEPORT, KEY_TELEPORT, ASSET_HEADER_TELEPORT, GROUP_TRAEFIK, KEY_TRAEFIK, ASSET_HEADER_TRAEFIK, GROUP_DISTRIBUTABLE, KEY_DISTRIBUTABLE, ASSET_HEADER_DISTRIBUTABLE, constants_base, features, docker_config, Any, MutableMapping, get_dagster_logger, GroupIn, OpenStudioLandscapesConfig, FeatureVolumeType, ComposeScope, ComposeCmdExclusion, DockerComposeNetworkMode, DockerComposeRestartPolicy, DockerComposeDependsOnPolicy, DockerRegistry, DockerRepositoryType, DockerConfig, EnvVar, FEATURES, constants_compose, constants_compose_license_server and constants_compose_worker from wildcard import of OpenStudioLandscapes.engine.constants (unused-wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:38:0: W0614: Unused import(s) json, operator_, shlex, time, git, cmd_list_to_str, get_pip_install_str, get_apt_install_str, get_copy_str, get_wget_str, get_git_root, get_configs_root, get_data_root, get_bin_root, get_image_name, parse_docker_image_path, get_compose_scope, get_feature_config, expand_dict_vars, metadatavalues_from_dict, get_bool_env, get_str_env, get_dynamic_ins, get_networks_dict, Tuple, OpExecutionContext, ComposeScopeException, OpenStudioLandscapesException, queue, shutil, subprocess, threading, OpenStudioLandscapesDockerException, docker_build_cmd, docker_push_cmd, OutputReader, execute_in_threads, docker_process_cmds and docker_do from wildcard import of OpenStudioLandscapes.engine.utils (unused-wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:39:0: W0614: Unused import(s) DockerComposeServiceDefinition, DockerComposeNetworkDefinition, get_pangolin_newt_service_skeleton, LiteralString, Required and TypedDict from wildcard import of OpenStudioLandscapes.engine.utils.docker.compose_dicts (unused-wildcard-import)
+src/OpenStudioLandscapes/Twingate/assets.py:43:0: W0614: Unused import(s) GROUP and KEY from wildcard import of OpenStudioLandscapes.Twingate.constants (unused-wildcard-import)
 ************* Module OpenStudioLandscapes.Twingate.definitions
 src/OpenStudioLandscapes/Twingate/definitions.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 ************* Module OpenStudioLandscapes.Twingate.readme_feature
@@ -38,20 +50,194 @@ src/OpenStudioLandscapes/Twingate/readme_feature.py:18:8: C2801: Unnecessarily c
 src/OpenStudioLandscapes/Twingate/readme_feature.py:121:8: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
 src/OpenStudioLandscapes/Twingate/readme_feature.py:151:8: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
 ************* Module OpenStudioLandscapes.Twingate.constants
-src/OpenStudioLandscapes/Twingate/constants.py:42:0: C0301: Line too long (115/100) (line-too-long)
-src/OpenStudioLandscapes/Twingate/constants.py:58:1: W0511: Todo: (fixme)
+src/OpenStudioLandscapes/Twingate/constants.py:9:1: W0511: Todo (fixme)
 src/OpenStudioLandscapes/Twingate/constants.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-src/OpenStudioLandscapes/Twingate/constants.py:22:0: C0413: Import "from OpenStudioLandscapes.engine.constants import DOCKER_USE_CACHE_GLOBAL" should be placed at the top of the module (wrong-import-position)
-src/OpenStudioLandscapes/Twingate/constants.py:23:0: C0413: Import "from OpenStudioLandscapes.engine.enums import OpenStudioLandscapesConfig" should be placed at the top of the module (wrong-import-position)
-src/OpenStudioLandscapes/Twingate/constants.py:80:0: C0112: Empty function docstring (empty-docstring)
-src/OpenStudioLandscapes/Twingate/constants.py:8:0: W0611: Unused MutableMapping imported from typing (unused-import)
 ************* Module OpenStudioLandscapes.Twingate.__init__
-src/OpenStudioLandscapes/Twingate/__init__.py:4:5: W0511: TODO: Import directly (no need for conditional) when `python_requires = >= 3.8` (fixme)
+src/OpenStudioLandscapes/Twingate/__init__.py:6:5: W0511: TODO: Import directly (no need for conditional) when `python_requires = >= 3.8` (fixme)
 ************* Module OpenStudioLandscapes.Twingate
 src/OpenStudioLandscapes/Twingate/__init__.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 src/OpenStudioLandscapes/Twingate/__init__.py:1:0: C0103: Module name "Twingate" doesn't conform to snake_case naming style (invalid-name)
-src/OpenStudioLandscapes/Twingate/__init__.py:11:4: C0103: Constant name "dist_name" doesn't conform to UPPER_CASE naming style (invalid-name)
+************* Module OpenStudioLandscapes.Twingate.config.models
+src/OpenStudioLandscapes/Twingate/config/models.py:46:0: C0301: Line too long (105/100) (line-too-long)
+src/OpenStudioLandscapes/Twingate/config/models.py:54:0: C0301: Line too long (106/100) (line-too-long)
+src/OpenStudioLandscapes/Twingate/config/models.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src/OpenStudioLandscapes/Twingate/config/models.py:12:0: E0401: Unable to import 'OpenStudioLandscapes.engine.config.models' (import-error)
+src/OpenStudioLandscapes/Twingate/config/models.py:12:0: C0413: Import "from OpenStudioLandscapes.engine.config.models import FeatureBaseModel" should be placed at the top of the module (wrong-import-position)
+src/OpenStudioLandscapes/Twingate/config/models.py:12:0: E0611: No name 'config' in module 'OpenStudioLandscapes.engine' (no-name-in-module)
+src/OpenStudioLandscapes/Twingate/config/models.py:14:0: C0413: Import "from OpenStudioLandscapes.Twingate import dist" should be placed at the top of the module (wrong-import-position)
+src/OpenStudioLandscapes/Twingate/config/models.py:17:13: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+src/OpenStudioLandscapes/Twingate/config/models.py:20:0: C0115: Missing class docstring (missing-class-docstring)
+src/OpenStudioLandscapes/Twingate/config/models.py:20:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+src/OpenStudioLandscapes/Twingate/config/models.py:4:0: W0611: Unused EnvVar imported from dagster (unused-import)
+************* Module OpenStudioLandscapes.Twingate.doc.readme
+src/OpenStudioLandscapes/Twingate/doc/readme.py:50:0: C0301: Line too long (104/100) (line-too-long)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:53:0: C0301: Line too long (106/100) (line-too-long)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:55:0: C0301: Line too long (119/100) (line-too-long)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:82:0: C0301: Line too long (119/100) (line-too-long)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:110:0: C0301: Line too long (123/100) (line-too-long)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:21:8: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:124:8: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:154:8: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
+src/OpenStudioLandscapes/Twingate/doc/readme.py:1:0: R0801: Similar lines in 2 files
+==OpenStudioLandscapes.Twingate.doc.readme:[14:168]
+==OpenStudioLandscapes.Twingate.readme_feature:[11:165]
+        level=1,
+    )
+
+    # Logo
+
+    doc.add_paragraph(
+        snakemd.Inline(
+            text=textwrap.dedent(
+                """\
+                Logo Twingate\
+                """
+            ),
+            image="https://help.twingate.com/hc/theming_assets/01HZKY9WB60MKN9FS7R4KP0J80.png",
+            link="https://www.twingate.com/",
+        ).__str__()
+    )
+
+    doc.add_heading(
+        text="Twingate Connector",
+        level=2,
+    )
+
+    doc.add_paragraph(
+        text=textwrap.dedent(
+            """\
+            Twingate Information:\
+            """
+        )
+    )
+
+    doc.add_unordered_list(
+        [
+            "[Github](https://github.com/Twingate-Labs)",
+            "[Twingate on Docker Hub](https://hub.docker.com/u/twingate)",
+            "[Twingate Connector (Docker Hub)](https://hub.docker.com/r/twingate/connector)",
+            "[How to deploy a Connector](https://www.twingate.com/docs/quick-start#deploy-a-connector)",
+            "[Documentation](https://www.twingate.com/docs/)",
+            "[Twingate API](https://www.twingate.com/docs/api-overview)",
+            "[Deploy Docker Compose](https://www.twingate.com/docs/deploy-connector-with-docker-compose)",
+            "[Documentation](https://rustdesk.com/docs/en/self-host/rustdesk-server-oss/docker/)",
+            "[Tutorial/Overview (Network Chuck)](https://www.youtube.com/watch?v=IYmXPF3XUwo&ab_channel=NetworkChuck)",
+        ]
+    )
+
+    doc.add_heading(
+        text="Twingate Connector Setup",
+        level=3,
+    )
+
+    doc.add_heading(
+        text="Sign Up",
+        level=4,
+    )
+
+    doc.add_unordered_list(
+        [
+            "[https://auth.twingate.com/signup-v2](https://auth.twingate.com/signup-v2)",
+        ]
+    )
+
+    doc.add_heading(
+        text="Add Remote Network",
+        level=4,
+    )
+
+    doc.add_unordered_list(
+        [
+            "[https://openstudiolandscapes.twingate.com/networks](https://openstudiolandscapes.twingate.com/networks)",
+        ]
+    )
+
+    doc.add_ordered_list(
+        [
+            "On Premise",
+            "Set Remote Network name",
+            "Add Remote Network name to `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK`)",
+        ]
+    )
+
+    doc.add_heading(
+        text="Add Connector",
+        level=4,
+    )
+
+    doc.add_paragraph(
+        text=textwrap.dedent(
+            """\
+            For redundancy, Twingate sets up two Connectors. We'll
+            continue with one for now.\
+            """
+        )
+    )
+
+    doc.add_unordered_list(
+        [
+            "[https://openstudiolandscapes.twingate.com/connectors](https://openstudiolandscapes.twingate.com/connectors)",
+        ]
+    )
+
+    doc.add_ordered_list(
+        [
+            "Docker",
+            "Generate New Tokens",
+            "Add Access Token to `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN`)",
+            "Add Refresh Token to `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN`)",
+        ]
+    )
+
+    doc.add_paragraph(
+        snakemd.Inline(
+            text=textwrap.dedent(
+                """\
+                Not yet connected\
+                """
+            ),
+            image="media/images/not_yet_connected.png",
+        ).__str__()
+    )
+
+    doc.add_heading(
+        text="Create and Launch Landscape (OpenStudioLandscapes-Twingate)",
+        level=4,
+    )
+
+    doc.add_code(
+        code=textwrap.dedent(
+            text="""\
+            [...]
+            twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Offline
+            twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
+            twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Authentication
+            twingate--2025-09-09-09-50-23-9369549baddf4d81b9e37d9fed4ca5ce  | State: Online
+            [...]\
+"""
+        ),
+        lang="generic",
+    )
+
+    doc.add_paragraph(
+        snakemd.Inline(
+            text=textwrap.dedent(
+                """\
+                Connected\
+                """
+            ),
+            image="media/images/connected.png",
+        ).__str__()
+    )
+
+    return doc
+
+
+if __name__ == "__main__":
+    pass (duplicate-code)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.82/10 (previous run: 5.41/10, +1.41)
+Your code has been rated at 2.72/10 (previous run: 2.65/10, +0.07)
 

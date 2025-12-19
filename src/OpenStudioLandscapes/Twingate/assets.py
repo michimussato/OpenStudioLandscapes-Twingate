@@ -3,7 +3,7 @@ import enum
 import pathlib
 import textwrap
 import urllib.parse
-from typing import Generator, Dict, List, Union
+from typing import Dict, Generator, List, Union
 
 import yaml
 from dagster import (
@@ -11,20 +11,24 @@ from dagster import (
     AssetIn,
     AssetKey,
     AssetMaterialization,
+    AssetsDefinition,
     MetadataValue,
     Output,
-    asset, AssetsDefinition,
+    asset,
 )
 from OpenStudioLandscapes.engine.common_assets.compose import get_compose
-
-from OpenStudioLandscapes.engine.common_assets.compose_scope import get_compose_scope_group__cmd
+from OpenStudioLandscapes.engine.common_assets.compose_scope import (
+    get_compose_scope_group__cmd,
+)
 from OpenStudioLandscapes.engine.common_assets.docker_compose_graph import (
     get_docker_compose_graph,
 )
-
 from OpenStudioLandscapes.engine.common_assets.feature import get_feature__CONFIG
 from OpenStudioLandscapes.engine.common_assets.feature_out import get_feature_out_v2
-from OpenStudioLandscapes.engine.common_assets.group_in import get_feature_in, get_feature_in_parent
+from OpenStudioLandscapes.engine.common_assets.group_in import (
+    get_feature_in,
+    get_feature_in_parent,
+)
 from OpenStudioLandscapes.engine.common_assets.group_out import get_group_out
 from OpenStudioLandscapes.engine.config.models import ConfigEngine, DockerConfigModel
 from OpenStudioLandscapes.engine.constants import *
@@ -114,7 +118,9 @@ def build_docker_image(
 
     env: Dict = CONFIG.env
 
-    docker_config_json: pathlib.Path = feature_in.openstudiolandscapes_base.docker_config_json
+    docker_config_json: pathlib.Path = (
+        feature_in.openstudiolandscapes_base.docker_config_json
+    )
 
     config_engine: ConfigEngine = CONFIG.config_engine
 

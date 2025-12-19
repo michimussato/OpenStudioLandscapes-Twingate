@@ -1,7 +1,7 @@
 import os
 import pathlib
 
-from dagster import get_dagster_logger, EnvVar
+from dagster import EnvVar, get_dagster_logger
 from pydantic import (
     Field,
     PositiveInt,
@@ -35,19 +35,23 @@ class Config(FeatureBaseModel):
     TWINGATE_NETWORK: str = Field(
         default=os.environ.get("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK", ""),
         frozen=False,
-        description="Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK`)."
+        description="Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK`).",
     )
 
     TWINGATE_ACCESS_TOKEN: str = Field(
-        default=os.environ.get("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN", ""),
+        default=os.environ.get(
+            "OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN", ""
+        ),
         frozen=False,
-        description="Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN`)."
+        description="Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN`).",
     )
 
     TWINGATE_REFRESH_TOKEN: str = Field(
-        default=os.environ.get("OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN", ""),
+        default=os.environ.get(
+            "OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN", ""
+        ),
         frozen=False,
-        description="Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN`)."
+        description="Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN`).",
     )
 
     TWINGATE_LOG_ANALYTICS: str = Field(
