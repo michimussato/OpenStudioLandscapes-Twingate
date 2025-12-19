@@ -158,8 +158,6 @@ def readme_feature(doc: snakemd.Document) -> snakemd.Document:
         ).__str__()
     )
 
-    # doc.add_horizontal_rule()
-
     return doc
 
 
