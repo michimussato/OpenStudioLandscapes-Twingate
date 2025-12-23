@@ -357,9 +357,6 @@ TWINGATE_LOG_ANALYTICS: v2
 # Examples:
 #     None
 TWINGATE_LOG_LEVEL: 3
-
-
-
 ```
 
 ***
@@ -543,4 +540,4 @@ Currently, the following Python interpreters are enabled for testing:
 
 ***
 
-Last changed: **2025-12-23 13:35:05 UTC**
+Last changed: **2025-12-23 13:37:26 UTC**
