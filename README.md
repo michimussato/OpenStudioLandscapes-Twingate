@@ -59,26 +59,212 @@ A local config store location will be created if it doesn't exist, together with
 The following settings are available in `OpenStudioLandscapes-Twingate` and are accessible throughout the [`OpenStudioLandscapes-Twingate`](https://github.com/michimussato/OpenStudioLandscapes-Twingate/tree/main/OpenStudioLandscapes/Twingate/config/models.py) package.
 
 ```yaml
-# Base Information
-group_name: "OpenStudioLandscapes_Twingate"
-key_prefixes:
-  - "OpenStudioLandscapes_Twingate"
+# ===
+# env
+# ---
+#
+# Type: typing.Dict
+# Base Class:
+#     Description:
+#         None
+#     Default value:
+#         None
 
-#compose_scope: "default"
 
-# Not enabled by default because this Feature
-# is mostly obsolete (replaced by Pangolin)
-#enabled: false
+# =============
+# config_engine
+# -------------
+#
+# Type: <class 'OpenStudioLandscapes.engine.config.models.ConfigEngine'>
+# Base Class:
+#     Description:
+#         None
+#     Default value:
+#         None
 
-#docker_image: "docker.io/twingate/connector:latest"
 
-#TWINGATE_LABEL_DEPLOYED_BY: "docker"
-#TWINGATE_NETWORK: null  # Set via `OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK` in `.env`
-#TWINGATE_ACCESS_TOKEN: null  # Set via `OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN` in `.env`
-#TWINGATE_REFRESH_TOKEN: null  # Set via `OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN` in `.env`
+# =============
+# config_parent
+# -------------
+#
+# Type: <class 'OpenStudioLandscapes.engine.config.models.FeatureBaseModel'>
+# Base Class:
+#     Description:
+#         None
+#     Default value:
+#         None
 
-#TWINGATE_LOG_ANALYTICS: "v2"
-#TWINGATE_LOG_LEVEL: 3
+
+# ============
+# distribution
+# ------------
+#
+# Type: <class 'importlib.metadata.Distribution'>
+# Base Class:
+#     Description:
+#         None
+#     Default value:
+#         None
+
+
+# ==========
+# group_name
+# ----------
+#
+# Type: <class 'str'>
+# Base Class:
+#     Description:
+#         None
+#     Default value:
+#         None
+
+
+# ============
+# key_prefixes
+# ------------
+#
+# Type: typing.List[str]
+# Base Class:
+#     Description:
+#         None
+#     Default value:
+#         None
+
+
+# =======
+# enabled
+# -------
+#
+# Type: <class 'bool'>
+# Base Class:
+#     Description:
+#         Whether the Feature is enabled or not.
+#     Default value:
+#         True
+enabled: false
+
+
+# =============
+# compose_scope
+# -------------
+#
+# Type: <class 'str'>
+# Base Class:
+#     Description:
+#         None
+#     Default value:
+#         default
+
+
+# ============
+# feature_name
+# ------------
+#
+# Type: <class 'str'>
+# Base Class:
+#     Description:
+#         The name of the feature. It is derived from the `OpenStudioLandscapes.<Feature>.dist` attribute.
+#     Default value:
+#         PydanticUndefined
+feature_name: OpenStudioLandscapes-Twingate
+
+
+# ==============
+# docker_compose
+# --------------
+#
+# Type: <class 'pathlib.Path'>
+# Base Class:
+#     Description:
+#         The path to the `docker-compose.yml` file.
+#     Default value:
+#         {DOT_LANDSCAPES}/{LANDSCAPE}/{FEATURE}/docker_compose/docker-compose.yml
+
+
+# ============
+# docker_image
+# ------------
+#
+# Type: <class 'str'>
+# Sub Class Description:
+#     None
+# Examples:
+#     None
+docker_image: docker.io/twingate/connector:latest
+
+
+# ==========================
+# TWINGATE_LABEL_DEPLOYED_BY
+# --------------------------
+#
+# Type: <class 'str'>
+# Sub Class Description:
+#     None
+# Examples:
+#     None
+TWINGATE_LABEL_DEPLOYED_BY: docker
+
+
+# ================
+# TWINGATE_NETWORK
+# ----------------
+#
+# Type: <class 'str'>
+# Sub Class Description:
+#     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK`).
+# Examples:
+#     None
+TWINGATE_NETWORK: ''
+
+
+# =====================
+# TWINGATE_ACCESS_TOKEN
+# ---------------------
+#
+# Type: <class 'str'>
+# Sub Class Description:
+#     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN`).
+# Examples:
+#     None
+TWINGATE_ACCESS_TOKEN: ''
+
+
+# ======================
+# TWINGATE_REFRESH_TOKEN
+# ----------------------
+#
+# Type: <class 'str'>
+# Sub Class Description:
+#     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN`).
+# Examples:
+#     None
+TWINGATE_REFRESH_TOKEN: ''
+
+
+# ======================
+# TWINGATE_LOG_ANALYTICS
+# ----------------------
+#
+# Type: <class 'str'>
+# Sub Class Description:
+#     None
+# Examples:
+#     None
+TWINGATE_LOG_ANALYTICS: v2
+
+
+# ==================
+# TWINGATE_LOG_LEVEL
+# ------------------
+#
+# Type: <class 'int'>
+# Sub Class Description:
+#     None
+# Examples:
+#     None
+TWINGATE_LOG_LEVEL: 3
+
+
 
 ```
 
@@ -263,4 +449,4 @@ Currently, the following Python interpreters are enabled for testing:
 
 ***
 
-Last changed: **2025-12-19 21:11:38 UTC**
+Last changed: **2025-12-23 12:26:21 UTC**
