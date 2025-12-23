@@ -192,7 +192,7 @@ The following settings are available in `OpenStudioLandscapes-Twingate` and are 
 #     Default value:
 #         True
 # Description:
-#     None
+#     Not enabled by default because this Feature is mostly obsolete (replaced by Pangolin)
 # Required:
 #     False
 # Examples:
@@ -543,4 +543,4 @@ Currently, the following Python interpreters are enabled for testing:
 
 ***
 
-Last changed: **2025-12-23 13:04:24 UTC**
+Last changed: **2025-12-23 13:35:05 UTC**
