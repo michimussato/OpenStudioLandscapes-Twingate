@@ -64,16 +64,17 @@ The following settings are available in `OpenStudioLandscapes-Twingate` and are 
 # ---
 #
 # Type: typing.Dict
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         None
 #     Default value:
 #         None
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 
@@ -83,16 +84,17 @@ The following settings are available in `OpenStudioLandscapes-Twingate` and are 
 # -------------
 #
 # Type: <class 'OpenStudioLandscapes.engine.config.models.ConfigEngine'>
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         None
 #     Default value:
 #         None
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 
@@ -102,16 +104,17 @@ The following settings are available in `OpenStudioLandscapes-Twingate` and are 
 # -------------
 #
 # Type: <class 'OpenStudioLandscapes.engine.config.models.FeatureBaseModel'>
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         None
 #     Default value:
 #         None
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 
@@ -121,16 +124,17 @@ The following settings are available in `OpenStudioLandscapes-Twingate` and are 
 # ------------
 #
 # Type: <class 'importlib.metadata.Distribution'>
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         None
 #     Default value:
 #         None
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 
@@ -140,16 +144,17 @@ The following settings are available in `OpenStudioLandscapes-Twingate` and are 
 # ----------
 #
 # Type: <class 'str'>
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         None
 #     Default value:
 #         None
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 
@@ -159,16 +164,17 @@ The following settings are available in `OpenStudioLandscapes-Twingate` and are 
 # ------------
 #
 # Type: typing.List[str]
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         None
 #     Default value:
 #         None
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 
@@ -178,16 +184,17 @@ The following settings are available in `OpenStudioLandscapes-Twingate` and are 
 # -------
 #
 # Type: <class 'bool'>
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         Whether the Feature is enabled or not.
 #     Default value:
 #         True
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 enabled: false
@@ -198,16 +205,17 @@ enabled: false
 # -------------
 #
 # Type: <class 'str'>
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         None
 #     Default value:
 #         default
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     ['default', 'license_server', 'worker']
 
@@ -217,16 +225,17 @@ enabled: false
 # ------------
 #
 # Type: <class 'str'>
-# Base Class:
-#     Required: True
+# Base Class Info:
+#     Required:
+#         True
 #     Description:
 #         The name of the feature. It is derived from the `OpenStudioLandscapes.<Feature>.dist` attribute.
 #     Default value:
 #         PydanticUndefined
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 feature_name: OpenStudioLandscapes-Twingate
@@ -237,16 +246,17 @@ feature_name: OpenStudioLandscapes-Twingate
 # --------------
 #
 # Type: <class 'pathlib.Path'>
-# Base Class:
-#     Required: False
+# Base Class Info:
+#     Required:
+#         False
 #     Description:
 #         The path to the `docker-compose.yml` file.
 #     Default value:
 #         {DOT_LANDSCAPES}/{LANDSCAPE}/{FEATURE}/docker_compose/docker-compose.yml
 # Description:
 #     The path to the `docker-compose.yml` file.
-# Required: False
-#     The path to the `docker-compose.yml` file.
+# Required:
+#     False
 # Examples:
 #     None
 
@@ -258,8 +268,8 @@ feature_name: OpenStudioLandscapes-Twingate
 # Type: <class 'str'>
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 docker_image: docker.io/twingate/connector:latest
@@ -272,8 +282,8 @@ docker_image: docker.io/twingate/connector:latest
 # Type: <class 'str'>
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 TWINGATE_LABEL_DEPLOYED_BY: docker
@@ -286,8 +296,8 @@ TWINGATE_LABEL_DEPLOYED_BY: docker
 # Type: <class 'str'>
 # Description:
 #     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK`).
-# Required: False
-#     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_NETWORK`).
+# Required:
+#     False
 # Examples:
 #     None
 TWINGATE_NETWORK: ''
@@ -300,8 +310,8 @@ TWINGATE_NETWORK: ''
 # Type: <class 'str'>
 # Description:
 #     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN`).
-# Required: False
-#     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_ACCESS_TOKEN`).
+# Required:
+#     False
 # Examples:
 #     None
 TWINGATE_ACCESS_TOKEN: ''
@@ -314,8 +324,8 @@ TWINGATE_ACCESS_TOKEN: ''
 # Type: <class 'str'>
 # Description:
 #     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN`).
-# Required: False
-#     Set this value in `.env` (`OPENSTUDIOLANDSCAPES_TWINGATE__TWINGATE_REFRESH_TOKEN`).
+# Required:
+#     False
 # Examples:
 #     None
 TWINGATE_REFRESH_TOKEN: ''
@@ -328,8 +338,8 @@ TWINGATE_REFRESH_TOKEN: ''
 # Type: <class 'str'>
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 TWINGATE_LOG_ANALYTICS: v2
@@ -342,8 +352,8 @@ TWINGATE_LOG_ANALYTICS: v2
 # Type: <class 'int'>
 # Description:
 #     None
-# Required: False
-#     None
+# Required:
+#     False
 # Examples:
 #     None
 TWINGATE_LOG_LEVEL: 3
@@ -533,4 +543,4 @@ Currently, the following Python interpreters are enabled for testing:
 
 ***
 
-Last changed: **2025-12-23 12:51:31 UTC**
+Last changed: **2025-12-23 12:54:07 UTC**
