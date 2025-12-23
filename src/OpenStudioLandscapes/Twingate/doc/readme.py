@@ -161,6 +161,8 @@ def readme_feature(
         ).__str__()
     )
 
+    doc.add_horizontal_rule()
+
     return doc
 
 
