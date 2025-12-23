@@ -1,7 +1,7 @@
 import os
 import pathlib
 
-from dagster import EnvVar, get_dagster_logger
+from dagster import get_dagster_logger
 from pydantic import (
     Field,
     PositiveInt,
@@ -9,18 +9,16 @@ from pydantic import (
 
 LOGGER = get_dagster_logger(__name__)
 
+from OpenStudioLandscapes.engine.config.str_gen import get_config_str
 from OpenStudioLandscapes.engine.config.models import FeatureBaseModel
 
 from OpenStudioLandscapes.Twingate import dist
 
 config_default = pathlib.Path(__file__).parent.joinpath("config_default.yml")
-CONFIG_STR = config_default.read_text()
 
 
 class Config(FeatureBaseModel):
     feature_name: str = dist.name
-
-    definitions: str = "OpenStudioLandscapes.Twingate.definitions"
 
     enabled: bool = False
 
@@ -63,3 +61,9 @@ class Config(FeatureBaseModel):
         default=3,
         frozen=False,
     )
+
+
+CONFIG_STR = get_config_str(
+    Config=Config,
+)
+
