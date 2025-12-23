@@ -1,5 +1,4 @@
 import os
-import pathlib
 
 from dagster import get_dagster_logger
 from pydantic import (
@@ -14,13 +13,14 @@ from OpenStudioLandscapes.engine.config.models import FeatureBaseModel
 
 from OpenStudioLandscapes.Twingate import dist
 
-config_default = pathlib.Path(__file__).parent.joinpath("config_default.yml")
-
 
 class Config(FeatureBaseModel):
     feature_name: str = dist.name
 
-    enabled: bool = False
+    enabled: bool = Field(
+        False,
+        description="Not enabled by default because this Feature is mostly obsolete (replaced by Pangolin)",
+    )
 
     docker_image: str = Field(
         default="docker.io/twingate/connector:latest",
