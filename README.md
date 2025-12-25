@@ -460,6 +460,7 @@ Clone this repository into `OpenStudioLandscapes/.features` (assuming the curren
 
 ```shell
 git -C ./.features clone https://github.com/michimussato/OpenStudioLandscapes-Twingate.git
+# Check out a specific branch by:
 # git -C ./.features/OpenStudioLandscapes-Twingate branch -a
 # git -C ./.features/OpenStudioLandscapes-Twingate checkout <branch>
 ```
@@ -538,4 +539,4 @@ Currently, the following Python interpreters are enabled for testing:
 
 ***
 
-Last changed: **2025-12-25 19:45:24 UTC**
+Last changed: **2025-12-25 20:47:55 UTC**
