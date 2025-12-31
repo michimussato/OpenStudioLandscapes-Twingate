@@ -219,5 +219,5 @@ src/OpenStudioLandscapes/Twingate/doc/readme.py:1:0: R0801: Similar lines in 2 f
  (duplicate-code)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.72/10 (previous run: 5.68/10, +1.05)
+Your code has been rated at 6.72/10 (previous run: 6.58/10, +0.14)
 
